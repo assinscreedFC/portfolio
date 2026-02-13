@@ -1,0 +1,269 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Salut, je suis Anis",
+    "title": "Ingénieur IA & Spécialiste Automatisation",
+    "description_1": "J'architecture des agents intelligents, je scrape le web à grande échelle et je construis l'infrastructure IA de demain. Je me spécialise dans les systèmes d'automatisation Python, des scrapers haute performance aux agents IA multi-étapes propulsés par LangGraph.",
+    "description_2": "Actuellement en dernière année de Licence en Informatique (Génie Logiciel), je conçois des architectures backend scalables, des pipelines de données en temps réel et des bots intelligents opérationnels 24/7. J'approfondis activement mes compétences en architectures Deep Learning et en infrastructure IA accélérée par GPU.",
+    "scroll_indicator": "Faire défiler vers le bas",
+    "social_links": {
+      "email_label": "Email",
+      "github_label": "GitHub",
+      "linkedin_label": "LinkedIn",
+      "resume_label": "CV"
+    },
+    "scroll_aria_label": "Défiler vers la section suivante"
+  },
+  "whatIUse": {
+    "sectionLabel": "Technologies",
+    "title": "Ce que j'utilise",
+    "description": "De l'orchestration d'agents IA au web scraping à grande échelle, voici les outils et technologies sur lesquels je m'appuie pour construire des systèmes intelligents de production.",
+    "categories": {
+      "ai": {
+        "title": "IA & Core",
+        "technologies": {
+          "python": {
+            "title": "Python",
+            "description": "Niveau expert — la colonne vertébrale de tous mes systèmes d'IA et d'automatisation"
+          },
+          "langgraph": {
+            "title": "LangGraph",
+            "description": "Orchestration d'agents IA multi-étapes avec routage adaptatif"
+          },
+          "scrapling": {
+            "title": "Scrapling",
+            "description": "Web scraping furtif avancé avec contournement anti-bot"
+          },
+          "tensorflow": {
+            "title": "TensorFlow",
+            "description": "Framework deep learning pour architectures de réseaux neuronaux"
+          },
+          "pytorch": {
+            "title": "PyTorch",
+            "description": "Deep learning orienté recherche et entraînement de modèles"
+          },
+          "selenium": {
+            "title": "Selenium",
+            "description": "Automatisation de navigateur pour interactions web complexes"
+          }
+        }
+      },
+      "backend": {
+        "title": "Backend & API",
+        "technologies": {
+          "fastapi": {
+            "title": "FastAPI",
+            "description": "Framework API async haute performance pour Python"
+          },
+          "nodejs": {
+            "title": "Node.js",
+            "description": "Runtime JavaScript pour services côté serveur"
+          },
+          "postgresql": {
+            "title": "PostgreSQL",
+            "description": "Base de données relationnelle robuste pour la production"
+          },
+          "mongodb": {
+            "title": "MongoDB",
+            "description": "Base de données NoSQL pour stockage flexible"
+          },
+          "docker": {
+            "title": "Docker",
+            "description": "Conteneurisation pour déploiements cohérents et reproductibles"
+          },
+          "sqlite": {
+            "title": "SQLite",
+            "description": "Base de données embarquée légère pour la persistance locale"
+          }
+        }
+      },
+      "frontend": {
+        "title": "Frontend & Mobile",
+        "technologies": {
+          "react": {
+            "title": "React",
+            "description": "Bibliothèque UI moderne pour interfaces interactives"
+          },
+          "nextjs": {
+            "title": "Next.js",
+            "description": "Framework React full-stack pour applications de production"
+          },
+          "reactnative": {
+            "title": "React Native",
+            "description": "Développement d'applications mobiles multiplateformes"
+          },
+          "typescript": {
+            "title": "TypeScript",
+            "description": "JavaScript typé pour des bases de code scalables"
+          }
+        }
+      },
+      "tools": {
+        "title": "Outils",
+        "technologies": {
+          "git": {
+            "title": "Git",
+            "description": "Contrôle de version pour le suivi des modifications"
+          },
+          "github": {
+            "title": "GitHub",
+            "description": "Hébergement de code et pipelines CI/CD"
+          },
+          "vscode": {
+            "title": "VS Code",
+            "description": "Éditeur de code principal avec extensions riches"
+          },
+          "postman": {
+            "title": "Postman",
+            "description": "Plateforme de développement et test d'API"
+          },
+          "linux": {
+            "title": "Linux",
+            "description": "Administration serveur et environnement de déploiement"
+          },
+          "swagger": {
+            "title": "Swagger",
+            "description": "Documentation et conception d'API"
+          }
+        }
+      }
+    }
+  },
+  "project": {
+    "title": "Projets",
+    "sectionLabel": "Mon travail",
+    "description": "Une sélection de systèmes backend, de bots d'automatisation et d'agents IA que j'ai construits. La valeur réside dans l'infrastructure, la logique et la performance — pas dans l'interface.",
+    "cta": "Plus de projets sur",
+    "projects": {
+      "surebetbot": {
+        "title": "Surebet Bot",
+        "description": "Moteur de détection d'arbitrage en temps réel scannant les cotes de 30+ bookmakers. Architecture multi-API avec rotation automatique des clés. Notification Telegram des opportunités en moins de 2 secondes. ~500 req/min de débit.",
+        "tech": [
+          "Python",
+          "The Odds API",
+          "Telegram",
+          "SQLite"
+        ]
+      },
+      "vintedsniper": {
+        "title": "Vinted Sniper",
+        "description": "Moteur d'intelligence marketplace propulsé par Scrapling pour le contournement anti-bot. Scoring statistique avec médiane pondérée, analyse de décroissance temporelle et métriques de confiance vendeur. Traitement de 1000+ annonces par batch avec 95% de précision.",
+        "tech": [
+          "Python",
+          "Scrapling",
+          "SQLite",
+          "Telegram"
+        ]
+      },
+      "xmonitor": {
+        "title": "X Monitor Bot",
+        "description": "Automatisation de surveillance Twitter/X 24/7 avec gestion de sessions par cookies et anti-détection. Dockerisé pour déploiement persistant avec récupération automatique de session. Zéro downtime sur 30 jours.",
+        "tech": [
+          "Python",
+          "Selenium",
+          "Docker",
+          "Telegram"
+        ]
+      },
+      "ocrproject": {
+        "title": "OCR Project",
+        "description": "Pipeline de traitement documentaire intelligent exploitant l'OCR pour l'extraction automatisée de texte et la structuration des données. Gestion multi-format avec 98%+ de précision de reconnaissance et traitement par lots.",
+        "tech": [
+          "Python",
+          "Tesseract",
+          "OpenCV",
+          "FastAPI"
+        ]
+      },
+      "scrappingauto": {
+        "title": "Scrapping Automatisation",
+        "description": "Framework de web scraping modulaire conçu pour la scalabilité. Définitions de cibles configurables, rotation de proxys et mesures anti-détection. Traitement de 10k+ pages/heure avec retry automatique et export de données structurées.",
+        "tech": [
+          "Python",
+          "Scrapling",
+          "Selenium",
+          "SQLite"
+        ]
+      },
+      "ortholyse": {
+        "title": "OrthoLyse",
+        "description": "Outil d'analyse orthographique propulsé par le NLP pour la correction automatisée de textes et la détection de patterns linguistiques. Combine approches par règles et statistiques pour un traitement haute précision de la langue française.",
+        "tech": [
+          "Python",
+          "NLP",
+          "FastAPI",
+          "React"
+        ]
+      }
+    },
+    "ariaLabels": {
+      "viewGithub": "Voir sur GitHub",
+      "viewLive": "Voir la doc"
+    }
+  },
+  "contact": {
+    "sectionLabel": "Me Contacter",
+    "title": "Contact",
+    "description1": "Je suis actuellement disponible pour de nouvelles opportunités en ingénierie IA, conseil en automatisation et architecture backend.",
+    "description2": "Si vous avez besoin d'un pipeline de scraping scalable, d'un agent intelligent ou d'une API robuste — parlons-en.",
+    "description3": "J'accueille avec plaisir les échanges avec d'autres ingénieurs, chercheurs en IA et collaborateurs potentiels. Vous pouvez me joindre via les canaux ci-dessous.",
+    "socialHeading": "Retrouvez-moi sur",
+    "form": {
+      "labels": {
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Votre nom complet",
+        "email": "votre.email@exemple.com",
+        "message": "Veuillez décrire votre projet ou demande..."
+      },
+      "validation": {
+        "nameRequired": "Le nom est requis",
+        "nameMinLength": "Le nom doit contenir au moins 2 caractères",
+        "emailRequired": "L'email est requis",
+        "emailInvalid": "Veuillez entrer une adresse email valide",
+        "messageRequired": "Le message est requis",
+        "messageMinLength": "Le message doit contenir au moins 10 caractères"
+      },
+      "buttons": {
+        "send": "Envoyer le message",
+        "sending": "Envoi en cours..."
+      }
+    },
+    "success": {
+      "title": "Message envoyé !",
+      "description": "Merci de m'avoir contacté. Je répondrai à votre demande sous peu."
+    },
+    "submissions": {
+      "received": "message reçu",
+      "receivedPlural": "messages reçus"
+    },
+    "socialLinks": {
+      "github": {
+        "name": "GitHub",
+        "username": "@your-username",
+        "description": "Voir mes projets et mon code"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "username": "/in/your-profile",
+        "description": "Connectez-vous avec moi professionnellement"
+      },
+      "email": {
+        "name": "Email",
+        "username": "contact@example.com",
+        "description": "Envoyez-moi un message direct"
+      }
+    }
+  },
+  "footer": {
+    "text": "Tous droits réservés.",
+    "backToTop": "Retour en haut"
+  }
+}
