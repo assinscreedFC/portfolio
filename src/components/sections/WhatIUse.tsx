@@ -39,10 +39,22 @@ function WhatIUse() {
       icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" className="h-[24px] w-[24px]" />,
     },
     {
-      title: t("whatIUse.categories.ai.technologies.selenium.title"),
-      description: t("whatIUse.categories.ai.technologies.selenium.description"),
+      title: t("whatIUse.categories.ai.technologies.playwright.title"),
+      description: t("whatIUse.categories.ai.technologies.playwright.description"),
       id: 6,
-      icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" className="h-[24px] w-[24px]" />,
+      icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" alt="Playwright" className="h-[24px] w-[24px]" />,
+    },
+    {
+      title: t("whatIUse.categories.ai.technologies.curlcffi.title"),
+      description: t("whatIUse.categories.ai.technologies.curlcffi.description"),
+      id: 7,
+      icon: <FiCode className="h-[24px] w-[24px] text-[#ead3c1]" />,
+    },
+    {
+      title: t("whatIUse.categories.ai.technologies.scrapy.title"),
+      description: t("whatIUse.categories.ai.technologies.scrapy.description"),
+      id: 8,
+      icon: <FiCode className="h-[24px] w-[24px] text-[#ead3c1]" />,
     },
   ];
 

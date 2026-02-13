@@ -46,9 +46,17 @@
             "title": "PyTorch",
             "description": "Research-grade deep learning and model training"
           },
-          "selenium": {
-            "title": "Selenium",
-            "description": "Browser automation for complex web interactions"
+          "playwright": {
+            "title": "Playwright",
+            "description": "Browser automation framework for reliable web scraping"
+          },
+          "curlcffi": {
+            "title": "curl_cffi",
+            "description": "Python HTTP client with TLS fingerprint impersonation"
+          },
+          "scrapy": {
+            "title": "Scrapy",
+            "description": "High-level web crawling and scraping framework"
           }
         }
       },
@@ -247,7 +255,7 @@
     "socialLinks": {
       "github": {
         "name": "GitHub",
-        "username": "@your-username",
+        "username": "@assinscreedfc",
         "description": "View my projects and code"
       },
       "linkedin": {

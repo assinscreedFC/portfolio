@@ -31,7 +31,7 @@ function Hero() {
     {
       icon: Github,
       label: t('hero.social_links.github_label'),
-      href: 'https://github.com/your-username',
+      href: 'https://github.com/assinscreedfc',
       color: 'hover:text-blue-300'
     },
     {
@@ -93,7 +93,7 @@ function Hero() {
                 textAlign="left"
               />
 
-              <h1 className="text-4xl md:text-6xl font-bold text-[#FCF7F8] leading-tight">
+              <h1 className="text-2xl md:text-4xl font-bold text-[#FCF7F8] leading-tight">
                 {t('hero.title')}
               </h1>
             </div>
@@ -106,7 +106,7 @@ function Hero() {
                   <a
                     key={index}
                     href={link.href}
-                    download={link.icon === FileText ? `Resume-YafaSabrina-${i18n.language}.pdf` : undefined}
+                    download={link.icon === FileText ? `Resume-AnisHammouche-${i18n.language}.pdf` : undefined}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`p-5 rounded-xl border border-[#FCF7F8]/20 text-[#FCF7F8] transition-all duration-300 hover:border-[#FCF7F8] hover:scale-105 `}

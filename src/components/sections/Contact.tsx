@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
     {
       name: t('contact.socialLinks.github.name'),
       username: t('contact.socialLinks.github.username'),
-      url: 'https://github.com/your-username',
+      url: 'https://github.com/assinscreedfc',
       icon: Github,
       color: 'hover:text-gray-400 hover:bg-gray-800/20',
       description: t('contact.socialLinks.github.description')

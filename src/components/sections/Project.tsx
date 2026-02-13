@@ -22,7 +22,7 @@ const Project = () => {
 
       <div>
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/assinscreedfc"
           target="_blank"
           className="flex items-center justify-center gap-2 mt-6 w-full px-6 py-4 bg-[#0e0e0e] text-[#FCF7F8] rounded-xl border border-gray-700/50 hover:bg-[#0e0e0e]/50 transition-colors duration-300"
         >
