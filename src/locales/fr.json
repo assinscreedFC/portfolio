@@ -6,9 +6,9 @@
   },
   "hero": {
     "greeting": "Salut, je suis Anis",
-    "title": "Ingénieur IA & Spécialiste Automatisation",
+    "title": "Python Architect | Agents IA & Scraping",
     "description_1": "J'architecture des agents intelligents, je scrape le web à grande échelle et je construis l'infrastructure IA de demain. Je me spécialise dans les systèmes d'automatisation Python, des scrapers haute performance aux agents IA multi-étapes propulsés par LangGraph.",
-    "description_2": "Actuellement en dernière année de Licence en Informatique (Génie Logiciel), je conçois des architectures backend scalables, des pipelines de données en temps réel et des bots intelligents opérationnels 24/7. J'approfondis activement mes compétences en architectures Deep Learning et en infrastructure IA accélérée par GPU.",
+    "description_2": "Actuellement en dernière année de Licence Informatique et Applications, je conçois des architectures backend scalables, des pipelines de données en temps réel et des bots intelligents opérationnels 24/7. J'approfondis activement mes compétences en architectures Deep Learning et en infrastructure IA accélérée par GPU, avec l'objectif de poursuivre en Master recherche.",
     "scroll_indicator": "Faire défiler vers le bas",
     "social_links": {
       "email_label": "Email",

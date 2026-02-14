@@ -6,9 +6,9 @@
   },
   "hero": {
     "greeting": "Hi, I'm Anis",
-    "title": "AI Engineer & Automation Specialist",
-    "description_1": "Architecting intelligent agents, scraping the web at scale, and building the future of AI infrastructure. I specialize in crafting Python-based automation systems, from high-throughput web scrapers to multi-step AI agents powered by LangGraph.",
-    "description_2": "Currently completing my Bachelor's in Computer Science (Software Engineering), I build scalable backend architectures, real-time data pipelines, and intelligent bots that operate 24/7. Actively deepening my expertise in Deep Learning architectures and GPU-accelerated AI infrastructure.",
+    "title": "Python Architect | AI Agents & Scraping",
+    "description_1": "I architect intelligent agents, scrape the web at scale, and build the AI infrastructure of tomorrow. I specialize in Python automation systems, ranging from high-performance scrapers to multi-stage AI agents powered by LangGraph.",
+    "description_2": "Currently in my final year of a BSc in Computer Science (Informatique et Applications), I design scalable backend architectures, real-time data pipelines, and intelligent bots operational 24/7. I am actively deepening my expertise in Deep Learning architectures and GPU-accelerated AI infrastructure, with the goal of pursuing a Research Master's degree.",
     "scroll_indicator": "Scroll Down",
     "social_links": {
       "email_label": "Email",
