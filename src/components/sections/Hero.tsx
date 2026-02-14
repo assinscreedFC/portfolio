@@ -25,7 +25,7 @@ function Hero() {
     {
       icon: Mail,
       label: t('hero.social_links.email_label'),
-      href: 'mailto:contact@example.com',
+      href: 'mailto:anishammouche50@gmail.com',
       color: 'hover:text-pink-300'
     },
     {
@@ -37,7 +37,7 @@ function Hero() {
     {
       icon: Linkedin,
       label: t('hero.social_links.linkedin_label'),
-      href: 'https://www.linkedin.com/in/your-profile/',
+      href: 'https://www.linkedin.com/in/anis-h',
       color: 'hover:text-rose-300'
     },
     {
@@ -93,7 +93,7 @@ function Hero() {
                 textAlign="left"
               />
 
-              <h1 className="text-2xl md:text-4xl font-bold text-[#FCF7F8] leading-tight">
+              <h1 className="text-2xl md:text-3xl font-bold text-[#FCF7F8] leading-tight">
                 {t('hero.title')}
               </h1>
             </div>

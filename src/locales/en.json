@@ -260,12 +260,12 @@
       },
       "linkedin": {
         "name": "LinkedIn",
-        "username": "/in/your-profile",
+        "username": "www.linkedin.com/in/anis-h",
         "description": "Connect with me professionally"
       },
       "email": {
         "name": "Email",
-        "username": "contact@example.com",
+        "username": "anishammouche50@gmail.com",
         "description": "Send me a direct message"
       }
     }

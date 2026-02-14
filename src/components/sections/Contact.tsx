@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
     {
       name: t('contact.socialLinks.linkedin.name'),
       username: t('contact.socialLinks.linkedin.username'),
-      url: 'https://www.linkedin.com/in/your-profile',
+      url: 'https://www.linkedin.com/in/anis-h',
       icon: Linkedin,
       color: 'hover:text-blue-400 hover:bg-blue-800/20',
       description: t('contact.socialLinks.linkedin.description')
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
     {
       name: t('contact.socialLinks.email.name'),
       username: t('contact.socialLinks.email.username'),
-      url: 'mailto:contact@example.com',
+      url: 'mailto:anishammouche50@gmail.com',
       icon: Mail,
       color: 'hover:text-red-400 hover:bg-red-800/20',
       description: t('contact.socialLinks.email.description')
