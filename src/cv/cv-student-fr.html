@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Anis Hammouche — CV</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Poppins', sans-serif; color: #1a1a1a; line-height: 1.5; max-width: 800px; margin: 0 auto; padding: 0; font-size: 12.5px; }
+
+  .header { background: #0a0a0a; color: #FCF7F8; padding: 24px 36px 16px; }
+  .header h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 2px; }
+  .header .subtitle { color: #9ca3af; font-size: 13px; font-weight: 400; margin-bottom: 8px; }
+  .header .contact { display: flex; gap: 14px; flex-wrap: wrap; font-size: 11px; color: #9ca3af; }
+  .header .contact a { color: #60a5fa; text-decoration: none; }
+  .header .contact span::before { content: ''; display: inline-block; width: 4px; height: 4px; background: #3b82f6; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+
+  .content { padding: 12px 36px 16px; }
+
+  h2 { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #3b82f6; margin: 12px 0 6px; padding-bottom: 5px; border-bottom: 1.5px solid #e5e7eb; display: flex; align-items: center; gap: 8px; }
+  h2::before { content: ''; display: inline-block; width: 3px; height: 12px; background: #3b82f6; border-radius: 2px; }
+
+  h3 { font-size: 13px; font-weight: 600; color: #111; }
+  .entry { margin-bottom: 8px; }
+  .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .entry-header .date { color: #6b7280; font-size: 11px; white-space: nowrap; font-weight: 500; }
+  .entry-sub { color: #6b7280; font-size: 11.5px; margin-top: 1px; line-height: 1.5; }
+  .entry-badge { display: inline-block; background: #3b82f6; color: white; font-size: 10px; font-weight: 600; padding: 1px 8px; border-radius: 10px; margin-left: 8px; vertical-align: middle; }
+
+  .profile { font-size: 12px; color: #374151; line-height: 1.55; margin-bottom: 2px; }
+  .profile strong { color: #111; }
+
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 6px 16px; margin-top: 4px; }
+  .skills-grid .cat { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #3b82f6; margin-bottom: 4px; }
+  .skills-grid .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+  ul { padding-left: 16px; margin-top: 3px; }
+  li { margin-bottom: 2px; color: #374151; font-size: 11.5px; }
+  li::marker { color: #3b82f6; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+  .tag { background: #0a0a0a; color: #FCF7F8; padding: 2px 10px; border-radius: 20px; font-size: 10px; font-weight: 500; }
+
+  .bottom-row { display: flex; gap: 24px; margin-top: 12px; padding-top: 5px; border-top: 1.5px solid #e5e7eb; align-items: center; }
+  .bottom-row .bottom-section { display: flex; flex-direction: column; gap: 4px; }
+  .bottom-row .bottom-label { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #3b82f6; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .bottom-row .bottom-label::before { content: ''; display: inline-block; width: 3px; height: 12px; background: #3b82f6; border-radius: 2px; }
+
+  .lang-inline { font-size: 12px; color: #374151; white-space: nowrap; }
+
+  .interests { display: flex; flex-wrap: wrap; gap: 5px; }
+  .interest { background: #eff6ff; color: #1e3a5f; padding: 3px 12px; border-radius: 20px; font-size: 10.5px; font-weight: 500; border: 1px solid #bfdbfe; }
+
+  @page { size: A4; margin: 0; }
+  @media print {
+    html, body { width: 210mm; height: 297mm; margin: 0; padding: 0; overflow: hidden; }
+    body { max-width: none; }
+  }
+  @media screen {
+    body { max-width: 210mm; min-height: 297mm; box-shadow: 0 4px 24px rgba(0,0,0,0.12); border-radius: 4px; overflow: hidden; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Anis Hammouche</h1>
+  <p class="subtitle">Étudiant en L3 Informatique et Applications</p>
+  <div class="contact">
+    <span>anishammouche50@gmail.com</span>
+    <span>Paris, France</span>
+    <a href="https://github.com/assinscreedfc">github.com/assinscreedFC</a>
+    <a href="https://linkedin.com/in/anis-h">linkedin.com/in/anis-h</a>
+  </div>
+</div>
+
+<div class="content">
+
+<h2>Profil</h2>
+<p class="profile">
+  Étudiant en <strong>Licence 3 Informatique et Applications</strong> à l'<strong>Université Paris Cité</strong> (classé <strong>6ème de promotion</strong> en L2), je me consacre à l'IA et aux architectures de données. Développeur indépendant (<strong>5 étoiles sur Fiverr</strong>) spécialisé dans les <strong>agents autonomes</strong> et l'acquisition de données à grande échelle. Mon projet académique vise l'intégration d'un <strong>Master orienté recherche</strong> afin d'approfondir les problématiques de <strong>Deep Learning</strong> et d'algorithmique distribuée. Mon ambition à long terme : contribuer à l'innovation technologique par le biais d'un <strong>Doctorat</strong>.
+</p>
+
+<h2>Compétences</h2>
+<div class="skills-grid">
+  <div>
+    <div class="cat">IA & Automatisation</div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">LangGraph</span>
+      <span class="tag">PyTorch</span>
+      <span class="tag">NLP</span>
+    </div>
+  </div>
+  <div>
+    <div class="cat">Web Scraping</div>
+    <div class="tags">
+      <span class="tag">Scrapling</span>
+      <span class="tag">Playwright</span>
+      <span class="tag">Scrapy</span>
+      <span class="tag">curl_cffi</span>
+    </div>
+  </div>
+  <div>
+    <div class="cat">Backend & DevOps</div>
+    <div class="tags">
+      <span class="tag">FastAPI</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Git</span>
+    </div>
+  </div>
+  <div>
+    <div class="cat">Frontend</div>
+    <div class="tags">
+      <span class="tag">React</span>
+      <span class="tag">Next.js</span>
+      <span class="tag">TypeScript</span>
+    </div>
+  </div>
+</div>
+
+<h2>Formation</h2>
+<div class="entry">
+  <div class="entry-header">
+    <h3>Licence 3 — Informatique et Applications</h3>
+    <span class="date">2025 – 2026</span>
+  </div>
+  <p class="entry-sub">Université Paris Cité</p>
+  <ul>
+    <li>Génie logiciel, IA, algorithmique avancée, traitement d'images, réseaux, mathématiques approfondies</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="entry-header">
+    <h3>Licence 2 — Informatique<span class="entry-badge">15.47/20 · 6ème</span></h3>
+    <span class="date">2024 – 2025</span>
+  </div>
+  <p class="entry-sub">Université Paris Cité</p>
+  <ul>
+    <li>Programmation orientée objet, systèmes d'exploitation, bases de données, algorithmique</li>
+  </ul>
+</div>
+
+<h2>Expérience professionnelle</h2>
+<div class="entry">
+  <div class="entry-header">
+    <h3>Développeur Freelance — Automatisation & Scraping</h3>
+    <span class="date">Sept. 2025 – Présent</span>
+  </div>
+  <p class="entry-sub">Fiverr · ★★★★★ 5/5</p>
+  <ul>
+    <li>Scripts d'automatisation sur mesure pour clients internationaux</li>
+    <li>Bots intelligents (surveillance, alertes, arbitrage) · déploiement Docker 24/7</li>
+    <li>Architecture backend : FastAPI, SQL/NoSQL, intégration Telegram</li>
+  </ul>
+</div>
+
+<h2>Projets clés</h2>
+
+<div class="entry">
+  <h3>Système d'Analyse Temps-Réel et Arbitrage de Données Flux</h3>
+  <p class="entry-sub">Moteur asynchrone agrégeant 30+ sources distribuées avec détection d'anomalies mathématiques et arbitrage statistique (latence &lt;10s). Résilience système via failover automatique et monitoring par dashboard analytique.</p>
+  <div class="tags"><span class="tag">Python (asyncio)</span><span class="tag">API REST distribuées</span><span class="tag">Streamlit</span><span class="tag">SQLite</span></div>
+</div>
+
+<div class="entry">
+  <h3>Moteur d'Analyse Prédictive et Scoring sur Marchés Secondaires</h3>
+  <p class="entry-sub">Architecture de collecte furtive (anti-botting) pour l'analyse de flux massifs. Scoring pondéré par percentiles et fenêtres glissantes (600+ items) pour l'identification automatique d'opportunités rares. Alertes temps-réel.</p>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Scrapling</span><span class="tag">Pandas (Analyse statistique)</span><span class="tag">SQLite</span></div>
+</div>
+
+<div class="entry">
+  <h3>OrthoLyse — Plateforme d'Analyse NLP pour le Diagnostic Médical</h3>
+  <p class="entry-sub">Application dédiée à l'orthophonie : transcription automatisée via OpenAI Whisper, extraction de métriques linguistiques complexes (MLU, syntaxe) par NLP avec Spacy et NLTK. Interface desktop avec synchronisation audio-texte et génération de bilans cliniques.</p>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Deep Learning (Whisper)</span><span class="tag">NLP (Spacy/NLTK)</span><span class="tag">PySide6</span></div>
+</div>
+
+<div class="bottom-row">
+  <div class="bottom-section">
+    <span class="bottom-label">Langues</span>
+    <span class="lang-inline"><strong>Français</strong> — Natif &nbsp;|&nbsp; <strong>Anglais</strong> — Courant</span>
+  </div>
+  <div class="bottom-section">
+    <span class="bottom-label">Intérêts</span>
+    <div class="interests">
+      <span class="interest">Intelligence Artificielle</span>
+      <span class="interest">Open Source</span>
+      <span class="interest">Veille Tech</span>
+      <span class="interest">Bots & Agents</span>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
