@@ -18,13 +18,13 @@ function WhatIUse() {
       title: t("whatIUse.categories.ai.technologies.langgraph.title"),
       description: t("whatIUse.categories.ai.technologies.langgraph.description"),
       id: 2,
-      icon: <FiCpu className="h-[24px] w-[24px] text-[#ead3c1]" />,
+      icon: <FiCpu className="h-[24px] w-[24px] text-accent-warm" />,
     },
     {
       title: t("whatIUse.categories.ai.technologies.scrapling.title"),
       description: t("whatIUse.categories.ai.technologies.scrapling.description"),
       id: 3,
-      icon: <FiCode className="h-[24px] w-[24px] text-[#ead3c1]" />,
+      icon: <FiCode className="h-[24px] w-[24px] text-accent-warm" />,
     },
     {
       title: t("whatIUse.categories.ai.technologies.tensorflow.title"),
@@ -48,13 +48,13 @@ function WhatIUse() {
       title: t("whatIUse.categories.ai.technologies.curlcffi.title"),
       description: t("whatIUse.categories.ai.technologies.curlcffi.description"),
       id: 7,
-      icon: <FiCode className="h-[24px] w-[24px] text-[#ead3c1]" />,
+      icon: <FiCode className="h-[24px] w-[24px] text-accent-warm" />,
     },
     {
       title: t("whatIUse.categories.ai.technologies.scrapy.title"),
       description: t("whatIUse.categories.ai.technologies.scrapy.description"),
       id: 8,
-      icon: <FiCode className="h-[24px] w-[24px] text-[#ead3c1]" />,
+      icon: <FiCode className="h-[24px] w-[24px] text-accent-warm" />,
     },
   ];
 
@@ -144,7 +144,7 @@ function WhatIUse() {
       title: t("whatIUse.categories.tools.technologies.vscode.title"),
       description: t("whatIUse.categories.tools.technologies.vscode.description"),
       id: 3,
-      icon: <FiCode className="h-[24px] w-[24px] text-[#ead3c1]" />,
+      icon: <FiCode className="h-[24px] w-[24px] text-accent-warm" />,
     },
     {
       title: t("whatIUse.categories.tools.technologies.postman.title"),
@@ -170,22 +170,22 @@ function WhatIUse() {
     {
       title: t("whatIUse.categories.ai.title"),
       items: aiItems,
-      icon: <FiCpu className="h-6 w-6 text-[#ead3c1]" />,
+      icon: <FiCpu className="h-6 w-6 text-accent-warm" />,
     },
     {
       title: t("whatIUse.categories.backend.title"),
       items: backendItems,
-      icon: <FiServer className="h-6 w-6 text-[#ead3c1]" />,
+      icon: <FiServer className="h-6 w-6 text-accent-warm" />,
     },
     {
       title: t("whatIUse.categories.frontend.title"),
       items: frontendItems,
-      icon: <FiCode className="h-6 w-6 text-[#ead3c1]" />,
+      icon: <FiCode className="h-6 w-6 text-accent-warm" />,
     },
     {
       title: t("whatIUse.categories.tools.title"),
       items: toolsItems,
-      icon: <FiTool className="h-6 w-6 text-[#ead3c1]" />,
+      icon: <FiTool className="h-6 w-6 text-accent-warm" />,
     },
   ];
 
@@ -195,12 +195,12 @@ function WhatIUse() {
         <div className="text-left mb-16">
           <BlurText
             text={t("whatIUse.sectionLabel")}
-            className="text-[#FCF7F8] text-2xl font-semibold mb-2"
+            className="text-light text-2xl font-semibold mb-2"
           />
-          <h1 className="text-3xl md:text-5xl font-semibold text-[#FCF7F8] leading-tight">
+          <h1 className="text-3xl md:text-5xl font-semibold text-light leading-tight">
             {t("whatIUse.title")}
           </h1>
-          <p className="text-red-100/60 leading-relaxed text-lg mt-4 max-w-2xl">
+          <p className="text-gray-400 leading-relaxed text-lg mt-4 max-w-2xl">
             {t("whatIUse.description")}
           </p>
         </div>
@@ -209,10 +209,10 @@ function WhatIUse() {
           {carouselConfigs.map((config, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="mb-4 flex items-center gap-3">
-                <div className="p-2 rounded-full border border-gray-700/50 text-[#FCF7F8]">
+                <div className="p-2 rounded-full border border-gray-700/50 text-light">
                   {config.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-[#FCF7F8]">
+                <h3 className="text-xl font-semibold text-light">
                   {config.title}
                 </h3>
               </div>

@@ -2,18 +2,11 @@ import { Github, FileText } from "lucide-react";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { lazy } from "react";
-import { useTranslation } from "react-i18next";
+import { useVersionT } from "../../hooks/useVersionT";
+import { useVersion } from "../../context/VersionContext";
+import type { PortfolioProject } from "../../types/portfolio";
 
 const CircularGallery = lazy(() => import("../bits/Components/CircularGallery/CircularGallery"))
-
-interface PortfolioProject {
-  image: string;
-  titleKey: string;
-  descriptionKey: string;
-  tech: string[];
-  link?: string;
-  github?: string;
-}
 
 // Inline SVG terminal-style visuals as data URIs
 const createTerminalSvg = (lines: string[], accent: string) => {
@@ -120,7 +113,22 @@ const ortholyseImage = createTerminalSvg(
   "#f472b6"
 );
 
-const portfolioProjects: PortfolioProject[] = [
+const viralcutterImage = createTerminalSvg(
+  [
+    "$ python viralcutter.py --input video.mp4",
+    "Transcribing with Whisper AI...",
+    "✓ Segments detected: 12",
+    "  Viral score: 8.7/10",
+    "  Best clip: 00:42-01:15",
+    "✓ Export: 5 clips generated",
+    "  Format: 9:16 (TikTok/Reels)",
+    "  Processing: 3.2x realtime",
+  ],
+  "#f97316"
+);
+
+// Student projects (original 6)
+const studentProjects: PortfolioProject[] = [
   {
     image: surebetImage,
     titleKey: "project.projects.surebetbot.title",
@@ -165,11 +173,57 @@ const portfolioProjects: PortfolioProject[] = [
   },
 ];
 
+// Pro projects (Business Plan v2 — 6 projets vitrine, reframed B2B)
+const proProjects: PortfolioProject[] = [
+  {
+    image: vintedImage,
+    titleKey: "project.projects.vintedsniper.title",
+    descriptionKey: "project.projects.vintedsniper.description",
+    tech: ["Python", "Scrapling", "SQLite", "Telegram"],
+    github: "https://github.com/assinscreedfc/vinted-sniper",
+  },
+  {
+    image: viralcutterImage,
+    titleKey: "project.projects.viralcutter.title",
+    descriptionKey: "project.projects.viralcutter.description",
+    tech: ["Python", "FFmpeg", "Whisper AI", "NLP"],
+    github: "https://github.com/assinscreedfc/ViralCutter",
+  },
+  {
+    image: ortholyseImage,
+    titleKey: "project.projects.ortholyse.title",
+    descriptionKey: "project.projects.ortholyse.description",
+    tech: ["Python", "NLP", "FastAPI", "React"],
+    github: "https://github.com/assinscreedfc/OrthoLyse",
+  },
+  {
+    image: ocrImage,
+    titleKey: "project.projects.ocrproject.title",
+    descriptionKey: "project.projects.ocrproject.description",
+    tech: ["Python", "Tesseract", "Mistral AI", "FastAPI"],
+    github: "https://github.com/assinscreedfc/ocr-project",
+  },
+  {
+    image: xmonitorImage,
+    titleKey: "project.projects.xmonitor.title",
+    descriptionKey: "project.projects.xmonitor.description",
+    tech: ["Python", "Selenium", "Docker", "Telegram"],
+    github: "https://github.com/assinscreedfc/x-monitor-bot",
+  },
+  {
+    image: surebetImage,
+    titleKey: "project.projects.surebetbot.title",
+    descriptionKey: "project.projects.surebetbot.description",
+    tech: ["Python", "The Odds API", "Telegram", "SQLite"],
+    github: "https://github.com/assinscreedfc/surebet_bot",
+  },
+];
+
 function ProjectCard({ project }: { project: PortfolioProject }) {
-  const { t } = useTranslation();
+  const { t } = useVersionT();
 
   return (
-    <Card className="w-[300px] md:w-[335px] bg-[#0e0e0e] border-gray-700/50 text-[#FCF7F8] shadow-lg rounded-xl overflow-hidden">
+    <Card className="w-[300px] md:w-[335px] bg-surface-card border-gray-700/50 text-light shadow-lg rounded-xl overflow-hidden">
       <CardHeader className="p-0">
         <img
           src={project.image}
@@ -184,7 +238,7 @@ function ProjectCard({ project }: { project: PortfolioProject }) {
           {project.tech.map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 bg-gray-700/50 text-[#FCF7F8] text-xs font-medium rounded-full"
+              className="px-2 py-1 bg-gray-700/50 text-light text-xs font-medium rounded-full"
             >
               {tech}
             </span>
@@ -196,7 +250,7 @@ function ProjectCard({ project }: { project: PortfolioProject }) {
           <Button
             asChild
             variant="outline"
-            className="flex-1 h-10 px-4 border-gray-700/50 text-[#FCF7F8] hover:bg-gray-700/50 text-sm"
+            className="flex-1 h-10 px-4 border-gray-700/50 text-light hover:bg-gray-700/50 text-sm"
           >
             <a
               href={project.github}
@@ -211,7 +265,7 @@ function ProjectCard({ project }: { project: PortfolioProject }) {
         {project.github && (
           <Button
             asChild
-            className="flex-1 h-10 px-4 bg-[#FCF7F8] text-[#0e0e0e] hover:bg-[#FCF7F8]/80 text-sm"
+            className="flex-1 h-10 px-4 bg-light text-surface-card hover:bg-light/80 text-sm"
           >
             <a
               href={`${project.github}#readme`}
@@ -229,10 +283,13 @@ function ProjectCard({ project }: { project: PortfolioProject }) {
 }
 
 export default function PortfolioGallery() {
+  const version = useVersion();
+  const projects = version === 'pro' ? proProjects : studentProjects;
+
   return (
     <div className="h-[80vh] lg:-mt-20">
       <CircularGallery
-        items={portfolioProjects}
+        items={projects}
         bend={1}
         scrollSpeed={2}
         scrollEase={0.08}

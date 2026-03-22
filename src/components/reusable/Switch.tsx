@@ -12,7 +12,7 @@ const Switch = () => {
 
   return (
     <section
-      className="w-18 h-8 bg-[#121212] shadow-inner rounded-full flex items-center px-1 relative cursor-pointer select-none border border-gray-600 transition-all duration-300 hover:bg-[#1a1a1a]"
+      className="w-18 h-8 bg-surface-base shadow-inner rounded-full flex items-center px-1 relative cursor-pointer select-none border border-gray-600 transition-all duration-300 hover:bg-surface-hover"
       onClick={handleToggle}
       aria-label="Switch language"
     >
@@ -29,8 +29,8 @@ const Switch = () => {
       <div
         className={`w-6 h-6 flex justify-center items-center text-white rounded-full duration-500 transform shadow-lg hover:shadow-xl z-20 ${!isEnglish ? 'translate-x-10' : ''}`}
         style={{
-          background: 'linear-gradient(135deg, #5d1a2f, #2d000f)',
-          border: '2px solid #6d1e3f',
+          background: 'linear-gradient(135deg, #1e3a5f, #0f1d30)',
+          border: '2px solid #2563eb',
         }}
       >
         <Globe size={14} />

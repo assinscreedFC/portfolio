@@ -247,7 +247,7 @@ export default function Carousel({
               className={`relative shrink-0 flex flex-col ${
                 round
                   ? "items-center justify-center text-center bg-[#060010] border-0"
-                  : "items-start justify-between bg-[#0e0e0e] border border-[#222] rounded-[12px]"
+                  : "items-start justify-between bg-surface-card border border-[#222] rounded-xl"
               } overflow-hidden cursor-grab active:cursor-grabbing`}
               style={{
                 width: itemWidth,
@@ -260,29 +260,29 @@ export default function Carousel({
               {round ? (
                 <div className="flex flex-col items-center justify-center h-full p-4">
                   <div className="mb-3">
-                    <span className="flex h-[50px] w-[50px] items-center justify-center rounded-full border border-gray-700/50 text-[#FCF7F8]">
+                    <span className="flex h-[50px] w-[50px] items-center justify-center rounded-full border border-gray-700/50 text-light">
                       {item.icon}
                     </span>
                   </div>
                   <div className="text-center">
-                    <div className="mb-1 font-semibold text-lg text-[#FCF7F8]">
+                    <div className="mb-1 font-semibold text-lg text-light">
                       {item.title}
                     </div>
-                    <p className="text-sm text-[#FCF7F8]">{item.description}</p>
+                    <p className="text-sm text-light">{item.description}</p>
                   </div>
                 </div>
               ) : (
                 <>
                   <div className="p-5 pb-0">
-                    <span className="flex h-[60px] w-[60px] items-center justify-center rounded-full border border-gray-700/50 text-[#FCF7F8]">
+                    <span className="flex h-[60px] w-[60px] items-center justify-center rounded-full border border-gray-700/50 text-light">
                       {item.icon}
                     </span>
                   </div>
                   <div className="p-5 pt-4 flex-1 flex flex-col justify-end">
-                    <div className="mb-2 font-semibold text-lg text-[#FCF7F8]">
+                    <div className="mb-2 font-semibold text-lg text-light">
                       {item.title}
                     </div>
-                    <p className="text-sm text-[#FCF7F8] leading-relaxed">
+                    <p className="text-sm text-light leading-relaxed">
                       {item.description}
                     </p>
                   </div>

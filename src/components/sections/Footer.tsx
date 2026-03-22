@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="text-[#FCF7F8]">
+    <footer className="text-light">
       <div className="max-w-6xl mx-auto px-6">
         {/* Divider */}
         <div className="border-t border-gray-800 py-12">
