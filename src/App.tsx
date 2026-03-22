@@ -1,10 +1,11 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar, {
-    NavBody, 
-    NavItems, 
-    MobileNav, 
-    MobileNavHeader, 
-    MobileNavMenu, 
+    NavBody,
+    NavItems,
+    MobileNav,
+    MobileNavHeader,
+    MobileNavMenu,
     MobileNavToggle,
     NavbarLogo
 } from './components/sections/Navbar'
@@ -12,18 +13,23 @@ import Switch from './components/reusable/Switch'
 import Footer from './components/sections/Footer'
 import Home from './pages/Home'
 import { useTranslation } from 'react-i18next'
+import { VersionProvider, useVersion } from './context/VersionContext'
 
 
-function App() {
+function AppContent() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const version = useVersion();
+
   const navItems = [
     { name: t("navbar.about"), link: "#about" },
+    ...(version === 'pro' ? [{ name: t("navbar.services") || "Services", link: "#services" }] : []),
     { name: t("navbar.projects"), link: "#projects" },
     { name: t("navbar.contact"), link: "#contact" }
   ];
+
   return (
-      <div className="min-h-screen flex flex-col bg-[#0a0a0a]">
+      <div className="min-h-screen flex flex-col bg-surface-base">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -36,18 +42,18 @@ function App() {
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
-            <MobileNavToggle 
-              isOpen={isOpen} 
-              onClick={() => setIsOpen(!isOpen)} 
+            <MobileNavToggle
+              isOpen={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
             />
           </MobileNavHeader>
-          
-          <MobileNavMenu 
+
+          <MobileNavMenu
             isOpen={isOpen}
           >
             {navItems.map((item, idx) => (
-              <a 
-                key={idx} 
+              <a
+                key={idx}
                 href={item.link}
                 className="text-neutral-600 dark:text-neutral-300"
                 onClick={() => setIsOpen(false)}
@@ -61,11 +67,24 @@ function App() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-        <main className="flex-grow ">
+        <main className="grow">
           <Home/>
         </main>
         <Footer />
       </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/etudiant" element={
+        <VersionProvider><AppContent /></VersionProvider>
+      } />
+      <Route path="/*" element={
+        <VersionProvider><AppContent /></VersionProvider>
+      } />
+    </Routes>
   )
 }
 
