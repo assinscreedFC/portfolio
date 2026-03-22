@@ -5,7 +5,16 @@ import { useVersionT } from '../../hooks/useVersionT'
 
 const Particles = lazy(() => import('../bits/Backgrounds/Particles/Particles'))
 
-const CALENDLY_URL = 'https://calendly.com/anishammouche50/audit'
+const CALENDLY_URL = 'https://calendly.com/anishammouche50'
+
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (opts: { url: string }) => void
+      initBadgeWidget: (opts: { url: string; text: string; color: string; textColor: string; branding: boolean }) => void
+    }
+  }
+}
 
 const metrics = [
   { value: '10k+', label: 'pages/h' },
@@ -105,15 +114,13 @@ function HeroPro() {
             </div>
 
             {/* CTA Audit */}
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105"
+            <button
+              onClick={() => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 cursor-pointer"
             >
               <Calendar size={20} />
               {t('services.cta')}
-            </a>
+            </button>
 
             {/* Social Links */}
             <div className="flex space-x-3">

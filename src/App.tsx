@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar, {
     NavBody,
@@ -20,6 +20,31 @@ function AppContent() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
   const version = useVersion();
+
+  useEffect(() => {
+    if (version !== 'pro') return
+    let timerId: ReturnType<typeof setTimeout>
+    const tryInit = () => {
+      if (!window.Calendly) return
+      window.Calendly.initBadgeWidget({
+        url: 'https://calendly.com/anishammouche50',
+        text: 'Schedule time with me',
+        color: '#0069ff',
+        textColor: '#ffffff',
+        branding: false
+      })
+    }
+    // Defer to avoid DOM manipulation during React render
+    timerId = setTimeout(tryInit, 500)
+    return () => {
+      clearTimeout(timerId)
+      // Defer cleanup too to avoid unmount race condition
+      setTimeout(() => {
+        document.querySelector('.calendly-badge-widget')?.remove()
+        document.querySelector('.calendly-overlay')?.remove()
+      }, 0)
+    }
+  }, [version])
 
   const navItems = [
     { name: t("navbar.about"), link: "#about" },

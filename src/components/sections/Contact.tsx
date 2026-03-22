@@ -11,7 +11,7 @@ import BlurText from '../bits/TextAnimations/BlurText/BlurText';
 import { useVersionT } from '../../hooks/useVersionT';
 import { useVersion } from '../../context/VersionContext';
 
-const CALENDLY_URL = 'https://calendly.com/anishammouche50/audit';
+const CALENDLY_URL = 'https://calendly.com/anishammouche50';
 
 const Contact: React.FC = () => {
   const { t } = useVersionT();
@@ -58,15 +58,13 @@ const Contact: React.FC = () => {
             <p className="text-light text-lg mb-2">
               {t('contact.description2')}
             </p>
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-4 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-lg"
+            <button
+              onClick={() => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })}
+              className="inline-flex items-center gap-2 mt-4 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-lg cursor-pointer"
             >
               <Calendar size={22} />
               {t('services.cta')}
-            </a>
+            </button>
           </div>
         )}
 

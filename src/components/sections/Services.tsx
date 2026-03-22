@@ -1,7 +1,7 @@
 import { Database, Bot, BarChart3, LayoutDashboard, Plug, Calendar } from 'lucide-react'
 import { useVersionT } from '../../hooks/useVersionT'
 
-const CALENDLY_URL = 'https://calendly.com/anishammouche50/audit'
+const CALENDLY_URL = 'https://calendly.com/anishammouche50'
 
 const serviceIcons = [
   { key: 'pipelines', icon: Database },
@@ -52,15 +52,13 @@ function Services() {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-lg"
+          <button
+            onClick={() => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })}
+            className="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 text-lg cursor-pointer"
           >
             <Calendar size={22} />
             {t('services.cta')}
-          </a>
+          </button>
           <p className="text-gray-500 mt-4 text-sm">
             {t('services.ctaDescription')}
           </p>
