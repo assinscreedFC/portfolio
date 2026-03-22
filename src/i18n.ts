@@ -3,10 +3,12 @@ import { initReactI18next } from 'react-i18next';
 
 import en from './locales/en.json';
 import fr from './locales/fr.json';
+import enPro from './locales/en-pro.json';
+import frPro from './locales/fr-pro.json';
 
 const resources = {
-  en: { translation: en },
-  fr: { translation: fr },
+  en: { translation: en, pro: enPro },
+  fr: { translation: fr, pro: frPro },
 };
 
 i18n
@@ -15,6 +17,8 @@ i18n
     resources,
     lng: 'en',
     fallbackLng: 'en',
+    ns: ['translation', 'pro'],
+    defaultNS: 'translation',
     interpolation: {
       escapeValue: false,
     },

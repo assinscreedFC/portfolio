@@ -1,14 +1,15 @@
 {
   "navbar": {
     "about": "À propos",
+    "services": "Services",
     "projects": "Projets",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Salut, je suis Anis",
-    "title": "Python Architect | Agents IA & Scraping",
-    "description_1": "J'architecture des agents intelligents, je scrape le web à grande échelle et je construis l'infrastructure IA de demain. Je me spécialise dans les systèmes d'automatisation Python, des scrapers haute performance aux agents IA multi-étapes propulsés par LangGraph.",
-    "description_2": "Actuellement en dernière année de Licence Informatique et Applications, je conçois des architectures backend scalables, des pipelines de données en temps réel et des bots intelligents opérationnels 24/7. J'approfondis activement mes compétences en architectures Deep Learning et en infrastructure IA accélérée par GPU, avec l'objectif de poursuivre en Master recherche.",
+    "title": "Developpeur Python | Ingenieur IA & Automatisation",
+    "description_1": "Je construis des agents intelligents, je scrape le web a grande echelle et je concois l'infrastructure IA de demain. Specialise dans les systemes d'automatisation Python — des scrapers haute performance aux agents IA multi-etapes propulses par LangGraph.",
+    "description_2": "Etudiant en L3 Informatique et Applications a l'Universite Paris Cite (classe 6eme de promotion en L2), je concois des architectures backend scalables, des pipelines de donnees en temps reel et des bots intelligents operationnels 24/7. Mon objectif : un Master oriente recherche en Deep Learning et algorithmique distribuee.",
     "scroll_indicator": "Faire défiler vers le bas",
     "social_links": {
       "email_label": "Email",

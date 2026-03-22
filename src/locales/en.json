@@ -1,14 +1,15 @@
 {
   "navbar": {
     "about": "About",
+    "services": "Services",
     "projects": "Projects",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Hi, I'm Anis",
-    "title": "Python Architect | AI Agents & Scraping",
-    "description_1": "I architect intelligent agents, scrape the web at scale, and build the AI infrastructure of tomorrow. I specialize in Python automation systems, ranging from high-performance scrapers to multi-stage AI agents powered by LangGraph.",
-    "description_2": "Currently in my final year of a BSc in Computer Science (Informatique et Applications), I design scalable backend architectures, real-time data pipelines, and intelligent bots operational 24/7. I am actively deepening my expertise in Deep Learning architectures and GPU-accelerated AI infrastructure, with the goal of pursuing a Research Master's degree.",
+    "title": "Python Developer | AI Engineer & Automation",
+    "description_1": "I build intelligent agents, scrape the web at scale, and design the AI infrastructure of tomorrow. Specialized in Python automation systems — from high-performance scrapers to multi-stage AI agents powered by LangGraph.",
+    "description_2": "Computer Science student (L3 — BSc equivalent) at Universite Paris Cite, ranked 6th in class. I design scalable backend architectures, real-time data pipelines, and intelligent bots operational 24/7. Focused on Deep Learning and distributed algorithms, with a goal to pursue a research-oriented Master's.",
     "scroll_indicator": "Scroll Down",
     "social_links": {
       "email_label": "Email",

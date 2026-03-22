@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "greeting": "SolidScale",
+    "title": "Custom Python Automation for Startups",
+    "description_1": "Your startup uses Make, Zapier, or Airtable to automate processes? At some point, you'll hit the limits: API caps, latency, exploding costs, impossible-to-debug workflows. That's where I step in.",
+    "description_2": "I build custom Python automations — scripts that replace your no-code tools and do the same job 10x faster, with zero external dependencies. From data pipelines to intelligent bots, I deliver production-grade systems that scale.",
+    "social_links": {
+      "email_label": "Email",
+      "github_label": "GitHub",
+      "linkedin_label": "LinkedIn",
+      "resume_label": "Resume"
+    }
+  },
+  "services": {
+    "sectionLabel": "What I Do",
+    "title": "Services",
+    "description": "I replace your limited no-code tools with custom Python scripts that are 10x faster, more reliable, and cheaper.",
+    "cta": "Book a free 15-min audit",
+    "ctaDescription": "I review your processes, identify what can be automated, and you keep the report no matter what. Zero commitment.",
+    "items": {
+      "pipelines": {
+        "title": "Automated Data Pipelines",
+        "description": "Scraping, OCR, ETL — structured data delivered automatically. 10k+ pages scraped per hour."
+      },
+      "bots": {
+        "title": "Custom Bots & Automation",
+        "description": "Telegram, Discord, Slack bots built to your specs. Turn 2 hours of manual work into 3 seconds."
+      },
+      "scoring": {
+        "title": "Multi-criteria Lead Scoring",
+        "description": "Statistical scoring with weighted median, time-decay analysis, and confidence metrics."
+      },
+      "dashboards": {
+        "title": "Dashboards & Automated Reporting",
+        "description": "Real-time dashboards and automated reports that deliver insights without manual effort."
+      },
+      "integrations": {
+        "title": "Custom API Integrations",
+        "description": "Connect your tools together with custom integrations. Zero downtime over 30 days."
+      }
+    }
+  },
+  "project": {
+    "title": "Case Studies",
+    "sectionLabel": "Results",
+    "description": "Real projects, real metrics. Each system is built for performance, reliability, and scale.",
+    "cta": "More projects on",
+    "projects": {
+      "vintedsniper": {
+        "title": "Marketplace Intelligence Engine",
+        "description": "Scalable marketplace analysis engine with anti-bot bypass. Statistical scoring with weighted median, time-decay analysis, and seller confidence metrics. Processes 1000+ listings per batch with 95% deal accuracy.",
+        "tech": ["Python", "Scrapling", "SQLite", "Telegram"]
+      },
+      "viralcutter": {
+        "title": "AI Video Processing Pipeline",
+        "description": "Open-source alternative to Opus Clip. Automated video segmentation and highlight extraction using AI. Processes long-form content into optimized short clips for social media distribution.",
+        "tech": ["Python", "FFmpeg", "Whisper AI", "NLP"]
+      },
+      "ortholyse": {
+        "title": "NLP-Powered Speech Analysis Tool",
+        "description": "AI-powered orthographic analysis tool for automated text correction and linguistic pattern detection. Combines rule-based and statistical approaches for high-accuracy French language processing.",
+        "tech": ["Python", "NLP", "FastAPI", "React"]
+      },
+      "ocrproject": {
+        "title": "Intelligent Document Pipeline",
+        "description": "Intelligent document processing pipeline leveraging OCR + Mistral AI for automated text extraction from invoices and contracts. 98%+ character recognition accuracy with batch processing. Turns 2 hours of manual data entry into 3 seconds.",
+        "tech": ["Python", "Tesseract", "Mistral AI", "FastAPI"]
+      },
+      "xmonitor": {
+        "title": "Social Listening Bot",
+        "description": "24/7 Twitter/X monitoring automation with cookie-based session management and anti-detection. Dockerized for persistent deployment with automatic session recovery. Zero downtime over 30-day runs.",
+        "tech": ["Python", "Selenium", "Docker", "Telegram"]
+      },
+      "surebetbot": {
+        "title": "Real-time Data Pipeline",
+        "description": "Real-time detection engine scanning data across 30+ sources. Multi-API failover architecture with automatic key rotation. Pushes actionable alerts via Telegram in under 2 seconds. ~500 req/min throughput.",
+        "tech": ["Python", "The Odds API", "Telegram", "SQLite"]
+      }
+    }
+  },
+  "contact": {
+    "sectionLabel": "Let's Talk",
+    "title": "Start Your Automation",
+    "description1": "Ready to replace your limited no-code tools with custom Python scripts that are 10x faster?",
+    "description2": "Book a free 15-minute audit — I review your processes, identify what can be automated, and you keep the report no matter what.",
+    "description3": "Zero commitment. Let's find out what we can automate together.",
+    "socialHeading": "Reach out"
+  }
+}

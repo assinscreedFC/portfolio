@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "greeting": "SolidScale",
+    "title": "Automatisation Python sur-mesure pour startups",
+    "description_1": "Votre startup utilise Make, Zapier ou Airtable pour automatiser ses process ? A un moment, vous allez toucher les limites : API caps, latence, couts qui explosent, workflows impossibles a debugger. C'est la que j'interviens.",
+    "description_2": "Je construis des automatisations sur-mesure en Python — des scripts custom qui remplacent vos outils no-code et font le meme travail en 10x moins de temps, sans dependance externe. Des pipelines de donnees aux bots intelligents, je livre des systemes production-grade qui scalent.",
+    "social_links": {
+      "email_label": "Email",
+      "github_label": "GitHub",
+      "linkedin_label": "LinkedIn",
+      "resume_label": "CV"
+    }
+  },
+  "services": {
+    "sectionLabel": "Ce que je fais",
+    "title": "Services",
+    "description": "Je remplace vos outils no-code limites par des scripts Python custom 10x plus rapides, plus fiables et moins chers.",
+    "cta": "Reserver un audit gratuit de 15 min",
+    "ctaDescription": "Je regarde vos process, j'identifie ce qui peut etre automatise, et vous gardez le rapport quoi qu'il arrive. Zero engagement.",
+    "items": {
+      "pipelines": {
+        "title": "Pipelines de donnees automatiques",
+        "description": "Scraping, OCR, ETL — donnees structurees livrees automatiquement. 10k+ pages scrapees par heure."
+      },
+      "bots": {
+        "title": "Bots et automatisations sur-mesure",
+        "description": "Bots Telegram, Discord, Slack construits sur-mesure. Transformez 2h de travail manuel en 3 secondes."
+      },
+      "scoring": {
+        "title": "Scoring de leads multi-criteres",
+        "description": "Scoring statistique avec mediane ponderee, analyse de decroissance temporelle et metriques de confiance."
+      },
+      "dashboards": {
+        "title": "Dashboards et reporting automatise",
+        "description": "Dashboards en temps reel et rapports automatiques qui livrent des insights sans effort manuel."
+      },
+      "integrations": {
+        "title": "Integrations API custom",
+        "description": "Connectez vos outils entre eux avec des integrations sur-mesure. Zero downtime sur 30 jours."
+      }
+    }
+  },
+  "project": {
+    "title": "Etudes de cas",
+    "sectionLabel": "Resultats",
+    "description": "Des projets reels, des metriques reelles. Chaque systeme est construit pour la performance, la fiabilite et le passage a l'echelle.",
+    "cta": "Plus de projets sur",
+    "projects": {
+      "vintedsniper": {
+        "title": "Moteur d'Intelligence Marketplace",
+        "description": "Moteur d'analyse marketplace scalable avec contournement anti-bot. Scoring statistique avec mediane ponderee, analyse temporelle et metriques de confiance vendeur. Traite 1000+ annonces par batch avec 95% de precision.",
+        "tech": ["Python", "Scrapling", "SQLite", "Telegram"]
+      },
+      "viralcutter": {
+        "title": "Pipeline de Traitement Video IA",
+        "description": "Alternative open-source a Opus Clip. Segmentation video automatisee et extraction de moments cles par IA. Transforme du contenu long en clips optimises pour les reseaux sociaux.",
+        "tech": ["Python", "FFmpeg", "Whisper AI", "NLP"]
+      },
+      "ortholyse": {
+        "title": "Outil d'Analyse Linguistique NLP",
+        "description": "Outil d'analyse orthographique alimente par l'IA pour la correction automatique et la detection de patterns linguistiques. Combine approches par regles et statistiques pour un traitement haute precision du francais.",
+        "tech": ["Python", "NLP", "FastAPI", "React"]
+      },
+      "ocrproject": {
+        "title": "Pipeline Document Intelligent",
+        "description": "Pipeline de traitement documentaire intelligent avec OCR + Mistral AI pour l'extraction automatique de texte depuis factures et contrats. 98%+ de precision. Transforme 2h de saisie manuelle en 3 secondes.",
+        "tech": ["Python", "Tesseract", "Mistral AI", "FastAPI"]
+      },
+      "xmonitor": {
+        "title": "Bot de Veille Sociale",
+        "description": "Automatisation de monitoring Twitter/X 24/7 avec gestion de sessions et anti-detection. Dockerise pour deploiement permanent avec recuperation automatique. Zero downtime sur 30 jours.",
+        "tech": ["Python", "Selenium", "Docker", "Telegram"]
+      },
+      "surebetbot": {
+        "title": "Pipeline de Donnees Temps Reel",
+        "description": "Moteur de detection temps reel scannant 30+ sources. Architecture multi-API avec rotation automatique de cles. Alerte via Telegram en moins de 2 secondes. ~500 req/min de debit.",
+        "tech": ["Python", "The Odds API", "Telegram", "SQLite"]
+      }
+    }
+  },
+  "contact": {
+    "sectionLabel": "Parlons-en",
+    "title": "Lancez votre automatisation",
+    "description1": "Pret a remplacer vos outils no-code limites par des scripts Python custom 10x plus rapides ?",
+    "description2": "Reservez un audit gratuit de 15 minutes — je regarde vos process, j'identifie ce qui peut etre automatise, et vous gardez le rapport quoi qu'il arrive.",
+    "description3": "Zero engagement. Trouvons ensemble ce qu'on peut automatiser.",
+    "socialHeading": "Me contacter"
+  }
+}
